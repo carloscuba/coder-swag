@@ -29,19 +29,19 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="L82-aV-5rn">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="140" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="L82-aV-5rn">
                                 <rect key="frame" x="0.0" y="68" width="375" height="535"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="140" id="MWg-r0-ro2" customClass="CategoryCell" customModule="coder_swag" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" rowHeight="140" id="MWg-r0-ro2" customClass="CategoryCell" customModule="coder_swag" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="140"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MWg-r0-ro2" id="G2O-jp-0m9">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="139.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="140"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="digital" translatesAutoresizingMaskIntoConstraints="NO" id="QQO-2g-Ji7">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="139.5"/>
+                                                    <rect key="frame" x="0.0" y="3" width="375" height="133.5"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOODIES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nVC-L9-9QH">
                                                     <rect key="frame" x="141" y="56" width="93" height="27.5"/>
@@ -51,11 +51,11 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="QQO-2g-Ji7" firstAttribute="top" secondItem="G2O-jp-0m9" secondAttribute="top" id="RBQ-PK-zQC"/>
-                                                <constraint firstAttribute="bottom" secondItem="QQO-2g-Ji7" secondAttribute="bottom" id="bjT-FL-Ld5"/>
                                                 <constraint firstAttribute="trailing" secondItem="QQO-2g-Ji7" secondAttribute="trailing" id="fz1-SI-HIn"/>
                                                 <constraint firstItem="QQO-2g-Ji7" firstAttribute="leading" secondItem="G2O-jp-0m9" secondAttribute="leading" id="jVX-AE-fFW"/>
+                                                <constraint firstItem="QQO-2g-Ji7" firstAttribute="top" secondItem="G2O-jp-0m9" secondAttribute="top" constant="3" id="lK9-fb-k1l"/>
                                                 <constraint firstItem="nVC-L9-9QH" firstAttribute="centerX" secondItem="G2O-jp-0m9" secondAttribute="centerX" id="mVn-ve-IO1"/>
+                                                <constraint firstAttribute="bottom" secondItem="QQO-2g-Ji7" secondAttribute="bottom" constant="3" id="qkz-a6-sGn"/>
                                                 <constraint firstItem="nVC-L9-9QH" firstAttribute="centerY" secondItem="G2O-jp-0m9" secondAttribute="centerY" id="wcA-7l-enC"/>
                                             </constraints>
                                         </tableViewCellContentView>
